@@ -94,3 +94,10 @@ test('should validate invalid formats', (t) => {
     t.truthy(result.error, 'no error validating')
   })
 })
+
+test('should not convert if convert option is false', (t) => {
+  const input = '/ip4/127.0.0.1'
+  let result = Joi.multiaddr().options({ convert: false }).validate(input)
+  t.ifError(result.error, 'no error validating')
+  t.is(result.value, input, 'value was correct')
+})

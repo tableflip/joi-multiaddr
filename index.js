@@ -20,7 +20,7 @@ module.exports = {
       return this.createError('multiaddr.invalid', { v: value, message: err.message }, state, options)
     }
 
-    return ma
+    return options.convert ? ma : value
   },
   rules: Object.keys(mafmt).map(fmt => ({
     name: fmt,
