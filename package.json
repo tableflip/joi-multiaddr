@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tableflip/joi-extension-multiaddr.git"
+    "url": "git+https://github.com/tableflip/joi-multiaddr.git"
   },
   "bugs": {
-    "url": "https://github.com/tableflip/joi-extension-multiaddr/issues"
+    "url": "https://github.com/tableflip/joi-multiaddr/issues"
   },
-  "homepage": "https://github.com/tableflip/joi-extension-multiaddr#readme"
+  "homepage": "https://github.com/tableflip/joi-multiaddr#readme"
 }
