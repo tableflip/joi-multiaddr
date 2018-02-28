@@ -1,7 +1,7 @@
 # joi-multiaddr
 
-[![Build Status](https://travis-ci.org/alanshaw/joi-multiaddr.svg?branch=master)](https://travis-ci.org/alanshaw/joi-multiaddr)
-[![dependencies Status](https://david-dm.org/alanshaw/joi-multiaddr/status.svg)](https://david-dm.org/alanshaw/joi-multiaddr)
+[![Build Status](https://travis-ci.org/tableflip/joi-multiaddr.svg?branch=master)](https://travis-ci.org/tableflip/joi-multiaddr)
+[![dependencies Status](https://david-dm.org/tableflip/joi-multiaddr/status.svg)](https://david-dm.org/tableflip/joi-multiaddr)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > Validate a multiaddr and common formats.
