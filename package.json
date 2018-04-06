@@ -1,6 +1,6 @@
 {
   "name": "joi-multiaddr",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Validate a multiaddr and common formats",
   "main": "index.js",
   "scripts": {
