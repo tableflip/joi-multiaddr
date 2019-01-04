@@ -28,10 +28,10 @@
   "license": "MIT",
   "dependencies": {
     "mafmt": "^6.0.0",
-    "multiaddr": "^5.0.2"
+    "multiaddr": "^6.0.2"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "joi": "^14.1.0",
     "npm-run-all": "^4.1.2",
     "nyc": "^13.1.0",

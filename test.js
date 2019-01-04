@@ -20,7 +20,7 @@ test('should validate invalid values', (t) => {
 test('should allow undefined unless required()', (t) => {
   const input = undefined
   let result = Joi.multiaddr().validate(input)
-  t.ifError(result.error, 'no error validating')
+  t.falsy(result.error, 'no error validating')
   t.is(result.value, input, 'value was correct')
 
   result = Joi.multiaddr().required().validate(input)
@@ -35,14 +35,14 @@ test('should not allow null unless allow(null)', (t) => {
   t.is(result.value, input, 'value was correct')
 
   result = Joi.multiaddr().allow(null).validate(input)
-  t.ifError(result.error, 'no error validating')
+  t.falsy(result.error, 'no error validating')
   t.is(result.value, input, 'value was correct')
 })
 
 test('should parse to Multiaddr', (t) => {
   const input = '/ip4/127.0.0.1/tcp/1337'
   const result = Joi.multiaddr().validate(input)
-  t.ifError(result.error, 'no error validating')
+  t.falsy(result.error, 'no error validating')
   t.true(Multiaddr.isMultiaddr(result.value))
   t.is(result.value.toString(), input)
 })
@@ -69,7 +69,7 @@ test('should validate valid formats', (t) => {
 
   inputs.forEach(input => {
     const result = Joi.multiaddr()[input[0]]().validate(input[1])
-    t.ifError(result.error, 'no error validating')
+    t.falsy(result.error, 'no error validating')
     t.true(Multiaddr.isMultiaddr(result.value))
     t.is(result.value.toString(), input[1])
   })
@@ -98,6 +98,6 @@ test('should validate invalid formats', (t) => {
 test('should not convert if convert option is false', (t) => {
   const input = '/ip4/127.0.0.1'
   let result = Joi.multiaddr().options({ convert: false }).validate(input)
-  t.ifError(result.error, 'no error validating')
+  t.falsy(result.error, 'no error validating')
   t.is(result.value, input, 'value was correct')
 })
